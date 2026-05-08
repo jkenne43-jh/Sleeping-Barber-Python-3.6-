@@ -7,6 +7,8 @@ EVENT = threading.Event()   #Event flag, keeps track of Barber/Customer interact
 global Earnings
 global SHOP_OPEN
 
+global glob
+
 class Customer(threading.Thread):       #Producer Thread
     def __init__(self, queue):          #Constructor passes Global Queue (all_customers) to Class
         threading.Thread.__init__(self)
